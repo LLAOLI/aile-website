@@ -496,13 +496,14 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .spec-table th{font-size:.78rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;width:40%}
 .spec-table td{font-size:.9rem;color:var(--c-gray-200)}
 
-/* ---------- Battery & Range Table ---------- */
-.battery-range-bar{max-width:280px}
-.br-table{width:100%;border-collapse:collapse;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-md);overflow:hidden}
-.br-table th{font-size:.72rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;text-align:left;padding:.5rem .85rem;border-bottom:1px solid var(--c-border);background:var(--c-surface-2)}
-.br-table td{font-size:.85rem;font-weight:500;color:var(--c-gray-200);padding:.45rem .85rem;border-bottom:1px solid var(--c-border)}
-.br-table tr:last-child td{border-bottom:none}
-.br-table td:last-child{color:var(--c-accent);font-weight:600}
+/* ---------- Battery & Range (inline in hero specs) ---------- */
+.pd-hero__spec--battery{grid-column:span 2;display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
+.br-inline{display:flex;align-items:center;gap:0;flex-wrap:wrap}
+.br-inline__item{display:inline-flex;align-items:center;gap:.3rem}
+.br-inline__cap{font-size:.8rem;font-weight:600;color:var(--c-gray-200)}
+.br-inline__arrow{font-size:.75rem;color:var(--txt-3)}
+.br-inline__val{font-size:.8rem;font-weight:700;color:var(--c-accent)}
+.br-inline__sep{display:inline-block;width:1px;height:14px;background:var(--c-border-lt);margin:0 .6rem}
 
 /* ---------- About Page ---------- */
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-2xl);align-items:center}
