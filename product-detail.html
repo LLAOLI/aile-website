@@ -60,7 +60,14 @@
     </div>
   </section>
 
-  <!-- ============ BATTERY & RANGE (removed standalone section, integrated into hero) ============ -->
+  <!-- ============ BATTERY & RANGE ============ -->
+  <section class="section" id="pdBattery" style="padding-top:0;padding-bottom:0">
+    <div class="container">
+      <div class="battery-range-bar reveal" id="batteryRangeGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
 
   <!-- ============ GALLERY ============ -->
   <section class="section" id="pdGallery">
@@ -202,23 +209,6 @@
         if (skipKeys.indexOf(key) !== -1) return;
         quickSpecs += '<div class="pd-hero__spec"><div class="pd-hero__spec-label">' + key + '</div><div class="pd-hero__spec-value">' + product.specs[key] + '</div></div>';
       });
-      // Battery & Range table as a full-width card inside the specs grid
-      quickSpecs += '<div class="pd-hero__spec pd-hero__spec--battery">';
-      quickSpecs += '<div class="pd-hero__spec-label">Battery &amp; Range</div>';
-      quickSpecs += '<div class="br-inline">';
-      var batteryOptions = [
-        { capacity: '10Ah', range: '30 km' },
-        { capacity: '15Ah', range: '45 km' },
-        { capacity: '20Ah', range: '60 km' },
-        { capacity: '25Ah', range: '75 km' },
-        { capacity: '30Ah', range: '90 km' },
-        { capacity: '35Ah', range: '105 km' }
-      ];
-      batteryOptions.forEach(function(opt, idx) {
-        var sep = idx > 0 ? '<span class="br-inline__sep"></span>' : '';
-        quickSpecs += sep + '<span class="br-inline__item"><span class="br-inline__cap">' + opt.capacity + '</span><span class="br-inline__arrow">&rarr;</span><span class="br-inline__val">' + opt.range + '</span></span>';
-      });
-      quickSpecs += '</div></div>';
       quickSpecs += '</div>';
 
       heroEl.innerHTML =
@@ -235,6 +225,23 @@
           '</div>' +
           quickSpecs +
         '</div>';
+
+      // ---- Render Battery & Range Options ----
+      var batteryOptions = [
+        { capacity: '15Ah', range: '45 km' },
+        { capacity: '20Ah', range: '60 km' },
+        { capacity: '25Ah', range: '75 km' }
+      ];
+      var brGrid = document.getElementById('batteryRangeGrid');
+      var brHtml =
+        '<table class="br-table">' +
+          '<thead><tr><th>Battery Capacity</th><th>Range</th></tr></thead>' +
+          '<tbody>';
+      batteryOptions.forEach(function(opt) {
+        brHtml += '<tr><td>' + opt.capacity + '</td><td>' + opt.range + '</td></tr>';
+      });
+      brHtml += '</tbody></table>';
+      brGrid.innerHTML = brHtml;
 
       // ---- Render Gallery ----
       var galleryGrid = document.getElementById('galleryGrid');
