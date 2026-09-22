@@ -228,20 +228,19 @@
 
       // ---- Render Battery & Range Options ----
       var batteryOptions = [
-        { capacity: '15Ah', range: '45 km', highlight: false },
-        { capacity: '20Ah', range: '60 km', highlight: true },
-        { capacity: '25Ah', range: '75 km', highlight: false }
+        { capacity: '15Ah', range: '45 km' },
+        { capacity: '20Ah', range: '60 km' },
+        { capacity: '25Ah', range: '75 km' }
       ];
       var brGrid = document.getElementById('batteryRangeGrid');
-      var brHtml = '';
-      batteryOptions.forEach(function(opt, idx) {
-        brHtml +=
-          '<div class="br-item' + (opt.highlight ? ' br-item--active' : '') + '">' +
-            '<div class="br-item__capacity">' + opt.capacity + (opt.highlight ? ' <span class="br-item__tag">Popular</span>' : '') + '</div>' +
-            '<div class="br-item__arrow">&rarr;</div>' +
-            '<div class="br-item__range">' + opt.range + '</div>' +
-          '</div>';
+      var brHtml =
+        '<table class="br-table">' +
+          '<thead><tr><th>Battery Capacity</th><th>Range</th></tr></thead>' +
+          '<tbody>';
+      batteryOptions.forEach(function(opt) {
+        brHtml += '<tr><td>' + opt.capacity + '</td><td>' + opt.range + '</td></tr>';
       });
+      brHtml += '</tbody></table>';
       brGrid.innerHTML = brHtml;
 
       // ---- Render Gallery ----

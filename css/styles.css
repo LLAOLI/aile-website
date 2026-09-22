@@ -496,15 +496,13 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .spec-table th{font-size:.78rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;width:40%}
 .spec-table td{font-size:.9rem;color:var(--c-gray-200)}
 
-/* ---------- Battery & Range Bar ---------- */
-.battery-range-bar{display:flex;gap:.75rem;flex-wrap:wrap}
-.br-item{display:flex;align-items:center;gap:.6rem;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-full);padding:.5rem 1.1rem;transition:all var(--t-fast)}
-.br-item:hover{border-color:var(--c-border-lt)}
-.br-item--active{border-color:var(--c-accent);background:var(--c-accent-dim)}
-.br-item__capacity{font-family:var(--ff-head);font-weight:700;font-size:.95rem;color:var(--c-white)}
-.br-item__arrow{color:var(--c-accent);font-size:1rem}
-.br-item__range{font-family:var(--ff-head);font-weight:600;font-size:.95rem;color:var(--c-accent)}
-.br-item__tag{display:inline-block;font-size:.65rem;font-weight:700;color:var(--c-black);background:var(--c-accent);padding:.1rem .5rem;border-radius:var(--r-full);text-transform:uppercase;letter-spacing:.04em;margin-left:.4rem;vertical-align:middle}
+/* ---------- Battery & Range Table ---------- */
+.battery-range-bar{max-width:280px}
+.br-table{width:100%;border-collapse:collapse;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-md);overflow:hidden}
+.br-table th{font-size:.72rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;text-align:left;padding:.5rem .85rem;border-bottom:1px solid var(--c-border);background:var(--c-surface-2)}
+.br-table td{font-size:.85rem;font-weight:500;color:var(--c-gray-200);padding:.45rem .85rem;border-bottom:1px solid var(--c-border)}
+.br-table tr:last-child td{border-bottom:none}
+.br-table td:last-child{color:var(--c-accent);font-weight:600}
 
 /* ---------- About Page ---------- */
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-2xl);align-items:center}
