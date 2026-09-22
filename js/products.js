@@ -46,12 +46,12 @@ let PRODUCTS = [
       imgURL('Electric mountain bike on mountain trail, outdoor lifestyle, scenic nature background')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '750W Hub Motor', desc: 'High-torque brushless motor delivers smooth, consistent power for steep climbs and rough terrain.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 15Ah Battery', desc: 'Removable lithium-ion battery with smart BMS for extended range and long cycle life.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Full Suspension', desc: 'Front fork and rear shock absorption system tuned for aggressive trail riding.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Disc Brakes', desc: '180mm hydraulic disc brakes provide reliable stopping power in all conditions.' },
-      { icon: 'frame', image: imgURL('Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Alloy Frame', desc: 'Lightweight 6061 aluminum frame engineered for strength and maneuverability.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LCD Display', desc: 'Full-color LCD with speed, battery, distance, and assist level readout.' }
+      { icon: 'motor', image: imgURL('Electric mountain bike - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '750W Hub Motor', desc: 'High-torque brushless motor delivers smooth, consistent power for steep climbs and rough terrain.' },
+      { icon: 'battery', image: imgURL('Electric mountain bike - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 15Ah Battery', desc: 'Removable lithium-ion battery with smart BMS for extended range and long cycle life.' },
+      { icon: 'suspension', image: imgURL('Electric mountain bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Full Suspension', desc: 'Front fork and rear shock absorption system tuned for aggressive trail riding.' },
+      { icon: 'brake', image: imgURL('Electric mountain bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Disc Brakes', desc: '180mm hydraulic disc brakes provide reliable stopping power in all conditions.' },
+      { icon: 'frame', image: imgURL('Electric mountain bike - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Alloy Frame', desc: 'Lightweight 6061 aluminum frame engineered for strength and maneuverability.' },
+      { icon: 'display', image: imgURL('Electric mountain bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LCD Display', desc: 'Full-color LCD with speed, battery, distance, and assist level readout.' }
     ]
   },
   {
@@ -88,12 +88,12 @@ let PRODUCTS = [
       imgURL('Electric city bike on urban street, city lifestyle, modern architecture background')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '350W Hub Motor', desc: 'Quiet, efficient rear hub motor ideal for flat city terrain and daily commuting.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 12Ah Battery', desc: 'Integrated frame battery with lockable design and LED charge indicator.' },
-      { icon: 'frame', image: imgURL('Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Step-Through Frame', desc: 'Easy-mount frame design perfect for urban commuting and everyday use.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Disc Brakes', desc: 'Reliable mechanical disc brakes for consistent stopping in urban traffic.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LED Display', desc: 'Compact display showing speed, battery level, and assist mode.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Comfort Fork', desc: 'Front suspension fork absorbs road vibrations for a smoother ride.' }
+      { icon: 'motor', image: imgURL('Electric city bike - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '350W Hub Motor', desc: 'Quiet, efficient rear hub motor ideal for flat city terrain and daily commuting.' },
+      { icon: 'battery', image: imgURL('Electric city bike - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 12Ah Battery', desc: 'Integrated frame battery with lockable design and LED charge indicator.' },
+      { icon: 'frame', image: imgURL('Electric city bike - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Step-Through Frame', desc: 'Easy-mount frame design perfect for urban commuting and everyday use.' },
+      { icon: 'brake', image: imgURL('Electric city bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Disc Brakes', desc: 'Reliable mechanical disc brakes for consistent stopping in urban traffic.' },
+      { icon: 'display', image: imgURL('Electric city bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LED Display', desc: 'Compact display showing speed, battery level, and assist mode.' },
+      { icon: 'suspension', image: imgURL('Electric city bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Comfort Fork', desc: 'Front suspension fork absorbs road vibrations for a smoother ride.' }
     ]
   },
   {
@@ -130,12 +130,12 @@ let PRODUCTS = [
       imgURL('Electric folding bike in urban setting, city lifestyle, modern background')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '500W Hub Motor', desc: 'Powerful compact motor provides excellent acceleration for a folding platform.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 10Ah Battery', desc: 'Lightweight removable battery designed for the folding frame architecture.' },
-      { icon: 'frame', image: imgURL('Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Quick Fold Frame', desc: 'Folds in under 10 seconds for easy transport and compact storage.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Disc Brakes', desc: 'Reliable stopping power despite the compact wheel size.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LCD Display', desc: 'Integrated display with foldaway mount for protection during transport.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Front Fork', desc: 'Suspension fork compensates for smaller wheel size on rough surfaces.' }
+      { icon: 'motor', image: imgURL('Folding electric bike - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '500W Hub Motor', desc: 'Powerful compact motor provides excellent acceleration for a folding platform.' },
+      { icon: 'battery', image: imgURL('Folding electric bike - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 10Ah Battery', desc: 'Lightweight removable battery designed for the folding frame architecture.' },
+      { icon: 'frame', image: imgURL('Folding electric bike - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Quick Fold Frame', desc: 'Folds in under 10 seconds for easy transport and compact storage.' },
+      { icon: 'brake', image: imgURL('Folding electric bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Disc Brakes', desc: 'Reliable stopping power despite the compact wheel size.' },
+      { icon: 'display', image: imgURL('Folding electric bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LCD Display', desc: 'Integrated display with foldaway mount for protection during transport.' },
+      { icon: 'suspension', image: imgURL('Folding electric bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Front Fork', desc: 'Suspension fork compensates for smaller wheel size on rough surfaces.' }
     ]
   },
   {
@@ -172,12 +172,12 @@ let PRODUCTS = [
       imgURL('Electric cargo bike in urban delivery setting, cargo bike lifestyle')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: 'Mid-Drive Motor', desc: '500W mid-drive motor delivers optimal torque for heavy cargo loads and hills.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 20Ah Battery', desc: 'High-capacity dual-battery option for extended delivery range.' },
-      { icon: 'frame', image: imgURL('Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Reinforced Frame', desc: 'Engineered for 200kg payload with integrated cargo platform options.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Brakes', desc: '4-piston hydraulic brakes designed for loaded stopping power.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Cargo Display', desc: 'Full-color display with cargo weight estimator and route analytics.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Heavy-Duty Fork', desc: 'Reinforced front suspension tuned for cargo weight distribution.' }
+      { icon: 'motor', image: imgURL('Electric cargo bike - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: 'Mid-Drive Motor', desc: '500W mid-drive motor delivers optimal torque for heavy cargo loads and hills.' },
+      { icon: 'battery', image: imgURL('Electric cargo bike - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 20Ah Battery', desc: 'High-capacity dual-battery option for extended delivery range.' },
+      { icon: 'frame', image: imgURL('Electric cargo bike - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Reinforced Frame', desc: 'Engineered for 200kg payload with integrated cargo platform options.' },
+      { icon: 'brake', image: imgURL('Electric cargo bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Brakes', desc: '4-piston hydraulic brakes designed for loaded stopping power.' },
+      { icon: 'display', image: imgURL('Electric cargo bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Cargo Display', desc: 'Full-color display with cargo weight estimator and route analytics.' },
+      { icon: 'suspension', image: imgURL('Electric cargo bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Heavy-Duty Fork', desc: 'Reinforced front suspension tuned for cargo weight distribution.' }
     ]
   },
   {
@@ -214,12 +214,12 @@ let PRODUCTS = [
       imgURL('Electric commuter bike on city bike lane, urban commuting lifestyle')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '400W Hub Motor', desc: 'Balanced motor output optimized for daily commuting efficiency.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 14Ah Battery', desc: 'Extended range battery with integrated frame mounting.' },
-      { icon: 'frame', image: imgURL('Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Hybrid Frame', desc: 'Versatile frame geometry suited for both road and light trail use.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Brakes', desc: 'Hydraulic disc brakes for confident commuting in all weather.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Smart Display', desc: 'Integrated display with USB charging and navigation support.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Comfort Fork', desc: 'Adjustable suspension fork for varied road conditions.' }
+      { icon: 'motor', image: imgURL('Electric commuter bike - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '400W Hub Motor', desc: 'Balanced motor output optimized for daily commuting efficiency.' },
+      { icon: 'battery', image: imgURL('Electric commuter bike - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 14Ah Battery', desc: 'Extended range battery with integrated frame mounting.' },
+      { icon: 'frame', image: imgURL('Electric commuter bike - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Hybrid Frame', desc: 'Versatile frame geometry suited for both road and light trail use.' },
+      { icon: 'brake', image: imgURL('Electric commuter bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Brakes', desc: 'Hydraulic disc brakes for confident commuting in all weather.' },
+      { icon: 'display', image: imgURL('Electric commuter bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Smart Display', desc: 'Integrated display with USB charging and navigation support.' },
+      { icon: 'suspension', image: imgURL('Electric commuter bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Comfort Fork', desc: 'Adjustable suspension fork for varied road conditions.' }
     ]
   },
   {
@@ -256,12 +256,12 @@ let PRODUCTS = [
       imgURL('Fat tire e-bike on beach sand, all-terrain lifestyle, outdoor setting')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '750W Hub Motor', desc: 'High-output motor for sand, snow, and off-road adventure riding.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 16Ah Battery', desc: 'Large capacity battery for extended off-road adventures.' },
-      { icon: 'frame', image: imgURL('Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Fat Tire Frame', desc: 'Wide dropout frame designed specifically for 4.0" tire clearance.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Brakes', desc: 'Powerful hydraulic disc brakes matched to the bike momentum.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LCD Display', desc: 'Full-color display with multi-mode assist and trip analytics.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Shock Fork', desc: 'Adjustable front suspension fork for varied terrain conditions.' }
+      { icon: 'motor', image: imgURL('Fat tire electric bike - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '750W Hub Motor', desc: 'High-output motor for sand, snow, and off-road adventure riding.' },
+      { icon: 'battery', image: imgURL('Fat tire electric bike - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 16Ah Battery', desc: 'Large capacity battery for extended off-road adventures.' },
+      { icon: 'frame', image: imgURL('Fat tire electric bike - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Fat Tire Frame', desc: 'Wide dropout frame designed specifically for 4.0" tire clearance.' },
+      { icon: 'brake', image: imgURL('Fat tire electric bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Brakes', desc: 'Powerful hydraulic disc brakes matched to the bike momentum.' },
+      { icon: 'display', image: imgURL('Fat tire electric bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LCD Display', desc: 'Full-color display with multi-mode assist and trip analytics.' },
+      { icon: 'suspension', image: imgURL('Fat tire electric bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Shock Fork', desc: 'Adjustable front suspension fork for varied terrain conditions.' }
     ]
   },
 
@@ -300,12 +300,12 @@ let PRODUCTS = [
       imgURL('Commuter electric scooter on city street, urban mobility lifestyle')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '350W Motor', desc: 'Efficient brushless motor optimized for daily urban commuting.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 10Ah Battery', desc: 'Smart battery with regenerative braking and cell balancing.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Dual Suspension', desc: 'Front and rear suspension for comfortable rides on city roads.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'E-ABS + Disc', desc: 'Dual braking system with electronic anti-lock for safety.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LED Dashboard', desc: 'Clear LED display showing speed, battery, and mode.' },
-      { icon: 'display', image: imgURL('Folding electric bike mechanism, compact portable design, urban mobility'), title: 'Folding System', desc: 'One-click folding mechanism for easy carrying and storage.' }
+      { icon: 'motor', image: imgURL('Commuter electric scooter - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '350W Motor', desc: 'Efficient brushless motor optimized for daily urban commuting.' },
+      { icon: 'battery', image: imgURL('Commuter electric scooter - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 10Ah Battery', desc: 'Smart battery with regenerative braking and cell balancing.' },
+      { icon: 'suspension', image: imgURL('Commuter electric scooter - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Dual Suspension', desc: 'Front and rear suspension for comfortable rides on city roads.' },
+      { icon: 'brake', image: imgURL('Commuter electric scooter - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'E-ABS + Disc', desc: 'Dual braking system with electronic anti-lock for safety.' },
+      { icon: 'display', image: imgURL('Commuter electric scooter - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LED Dashboard', desc: 'Clear LED display showing speed, battery, and mode.' },
+      { icon: 'display', image: imgURL('Commuter electric scooter - Folding electric bike mechanism, compact portable design, urban mobility'), title: 'Folding System', desc: 'One-click folding mechanism for easy carrying and storage.' }
     ]
   },
   {
@@ -342,12 +342,12 @@ let PRODUCTS = [
       imgURL('Foldable electric scooter carried by person, portability lifestyle')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '300W Motor', desc: 'Lightweight motor balanced for portability and daily range.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 7.5Ah Battery', desc: 'Compact battery pack designed for minimal weight.' },
-      { icon: 'frame', image: imgURL('Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Ultra-Compact Fold', desc: 'Folds to 40% of riding size for transit and office storage.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'E-ABS Brake', desc: 'Electronic anti-lock braking system with regenerative charging.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Mini Display', desc: 'Compact LED dashboard with essential ride metrics.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Rear Shock', desc: 'Rear suspension absorbs urban road irregularities.' }
+      { icon: 'motor', image: imgURL('Foldable electric scooter - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '300W Motor', desc: 'Lightweight motor balanced for portability and daily range.' },
+      { icon: 'battery', image: imgURL('Foldable electric scooter - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 7.5Ah Battery', desc: 'Compact battery pack designed for minimal weight.' },
+      { icon: 'frame', image: imgURL('Foldable electric scooter - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Ultra-Compact Fold', desc: 'Folds to 40% of riding size for transit and office storage.' },
+      { icon: 'brake', image: imgURL('Foldable electric scooter - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'E-ABS Brake', desc: 'Electronic anti-lock braking system with regenerative charging.' },
+      { icon: 'display', image: imgURL('Foldable electric scooter - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Mini Display', desc: 'Compact LED dashboard with essential ride metrics.' },
+      { icon: 'suspension', image: imgURL('Foldable electric scooter - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Rear Shock', desc: 'Rear suspension absorbs urban road irregularities.' }
     ]
   },
   {
@@ -384,12 +384,12 @@ let PRODUCTS = [
       imgURL('Performance electric scooter on open road, high-speed lifestyle, outdoor setting')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: 'Dual 1000W Motor', desc: 'Front and rear dual-motor drive for maximum acceleration and torque.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 18Ah Battery', desc: 'High-capacity battery with smart thermal management system.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Hydraulic Suspension', desc: 'Front and rear hydraulic suspension for high-speed stability.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Disc', desc: 'Dual hydraulic disc brakes for high-speed stopping performance.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'TFT Display', desc: 'Full-color TFT display with ride modes, GPS, and diagnostics.' },
-      { icon: 'display', image: imgURL('LED bicycle headlight, bright beam, night riding safety, dark background'), title: 'LED Lighting', desc: 'Integrated front headlight, brake light, and ambient deck lighting.' }
+      { icon: 'motor', image: imgURL('Performance electric scooter - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: 'Dual 1000W Motor', desc: 'Front and rear dual-motor drive for maximum acceleration and torque.' },
+      { icon: 'battery', image: imgURL('Performance electric scooter - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 18Ah Battery', desc: 'High-capacity battery with smart thermal management system.' },
+      { icon: 'suspension', image: imgURL('Performance electric scooter - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Hydraulic Suspension', desc: 'Front and rear hydraulic suspension for high-speed stability.' },
+      { icon: 'brake', image: imgURL('Performance electric scooter - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Disc', desc: 'Dual hydraulic disc brakes for high-speed stopping performance.' },
+      { icon: 'display', image: imgURL('Performance electric scooter - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'TFT Display', desc: 'Full-color TFT display with ride modes, GPS, and diagnostics.' },
+      { icon: 'display', image: imgURL('Performance electric scooter - LED bicycle headlight, bright beam, night riding safety, dark background'), title: 'LED Lighting', desc: 'Integrated front headlight, brake light, and ambient deck lighting.' }
     ]
   },
   {
@@ -426,12 +426,12 @@ let PRODUCTS = [
       imgURL('Long-range electric scooter on long distance road, touring lifestyle, outdoor')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '500W Motor', desc: 'Efficient motor tuned for extended range and consistent output.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 24Ah Battery', desc: 'Ultra-high capacity battery for 90km range on single charge.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Dual Suspension', desc: 'Front and rear suspension for comfortable long-distance rides.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Disc + E-ABS', desc: 'Dual braking system optimized for higher-speed stability.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Range Display', desc: 'Smart display with range estimation and energy management.' },
-      { icon: 'display', image: imgURL('LED bicycle headlight, bright beam, night riding safety, dark background'), title: 'LED Lighting', desc: 'High-visibility LED lighting system for safe long-distance riding.' }
+      { icon: 'motor', image: imgURL('Long range electric scooter - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '500W Motor', desc: 'Efficient motor tuned for extended range and consistent output.' },
+      { icon: 'battery', image: imgURL('Long range electric scooter - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 24Ah Battery', desc: 'Ultra-high capacity battery for 90km range on single charge.' },
+      { icon: 'suspension', image: imgURL('Long range electric scooter - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Dual Suspension', desc: 'Front and rear suspension for comfortable long-distance rides.' },
+      { icon: 'brake', image: imgURL('Long range electric scooter - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Disc + E-ABS', desc: 'Dual braking system optimized for higher-speed stability.' },
+      { icon: 'display', image: imgURL('Long range electric scooter - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Range Display', desc: 'Smart display with range estimation and energy management.' },
+      { icon: 'display', image: imgURL('Long range electric scooter - LED bicycle headlight, bright beam, night riding safety, dark background'), title: 'LED Lighting', desc: 'High-visibility LED lighting system for safe long-distance riding.' }
     ]
   },
   {
@@ -468,12 +468,12 @@ let PRODUCTS = [
       imgURL('Urban electric scooter on city street, urban mobility lifestyle, modern city background')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '400W Motor', desc: 'Balanced motor output for efficient city navigation.' },
-      { icon: 'battery', image: imgURL('Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 12Ah Battery', desc: 'Optimized capacity for daily urban commuting range.' },
-      { icon: 'suspension', image: imgURL('Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Front Suspension', desc: 'Front fork suspension absorbs city road imperfections.' },
-      { icon: 'brake', image: imgURL('Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'E-ABS + Drum', desc: 'Dual braking system for reliable urban stopping.' },
-      { icon: 'display', image: imgURL('Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LED Display', desc: 'Clear LED dashboard with speed, battery, and ride mode.' },
-      { icon: 'display', image: imgURL('Folding electric bike mechanism, compact portable design, urban mobility'), title: 'Quick Fold', desc: 'Fast folding system for public transit and office storage.' }
+      { icon: 'motor', image: imgURL('Urban electric scooter - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '400W Motor', desc: 'Balanced motor output for efficient city navigation.' },
+      { icon: 'battery', image: imgURL('Urban electric scooter - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 12Ah Battery', desc: 'Optimized capacity for daily urban commuting range.' },
+      { icon: 'suspension', image: imgURL('Urban electric scooter - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Front Suspension', desc: 'Front fork suspension absorbs city road imperfections.' },
+      { icon: 'brake', image: imgURL('Urban electric scooter - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'E-ABS + Drum', desc: 'Dual braking system for reliable urban stopping.' },
+      { icon: 'display', image: imgURL('Urban electric scooter - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LED Display', desc: 'Clear LED dashboard with speed, battery, and ride mode.' },
+      { icon: 'display', image: imgURL('Urban electric scooter - Folding electric bike mechanism, compact portable design, urban mobility'), title: 'Quick Fold', desc: 'Fast folding system for public transit and office storage.' }
     ]
   }
 ];
