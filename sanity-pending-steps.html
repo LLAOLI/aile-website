@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AiLE — Sanity CMS 待完成步骤</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0a0e17;
+    color: #e8ecf2;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 60px 24px 120px; }
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #4fc3f7, #81d4fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .subtitle { color: #7a8599; font-size: 1.1rem; margin-bottom: 48px; }
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 56px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #1a2030;
+    color: #4fc3f7;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+  p { margin-bottom: 14px; color: #b8c2d4; }
+  ul, ol { margin: 12px 0 20px 24px; }
+  li { margin-bottom: 8px; color: #b8c2d4; }
+
+  .step {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin: 24px 0;
+  }
+  .step-num {
+    display: inline-block;
+    background: linear-gradient(135deg, #4fc3f7, #0288d1);
+    color: #fff;
+    font-weight: 800;
+    font-size: .8rem;
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 12px;
+    letter-spacing: .05em;
+  }
+
+  code {
+    background: #1a2332;
+    color: #4fc3f7;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: .9rem;
+  }
+
+  pre {
+    background: #0d1117;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    padding: 20px 24px;
+    overflow-x: auto;
+    margin: 16px 0;
+  }
+  pre code {
+    background: none;
+    color: #c9d1d9;
+    padding: 0;
+    font-size: .85rem;
+    line-height: 1.6;
+  }
+
+  .note {
+    background: rgba(79, 195, 247, .08);
+    border-left: 3px solid #4fc3f7;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+  }
+  .note strong { color: #4fc3f7; }
+
+  .warn {
+    background: rgba(255, 193, 7, .08);
+    border-left: 3px solid #ffc107;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+  }
+  .warn strong { color: #ffc107; }
+
+  .done {
+    background: rgba(76, 175, 80, .08);
+    border-left: 3px solid #4caf50;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+  }
+  .done strong { color: #4caf50; }
+
+  .img-desc {
+    color: #7a8599;
+    font-size: .85rem;
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  .summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+  .summary-card {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  .summary-card .num {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .summary-card .label {
+    font-size: .85rem;
+    color: #7a8599;
+    margin-top: 4px;
+  }
+  .summary-card.done .num { color: #4caf50; }
+  .summary-card.todo .num { color: #ffc107; }
+
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th { text-align: left; padding: 10px 12px; color: #4fc3f7; font-size: .85rem; border-bottom: 2px solid #1e293b; }
+  td { padding: 10px 12px; font-size: .9rem; border-bottom: 1px solid #1a2030; }
+
+  .footer {
+    text-align: center;
+    color: #4a5568;
+    font-size: .85rem;
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #1a2030;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Sanity CMS 待完成步骤</h1>
+<p class="subtitle">以下是你还未完成的操作，共 2 步</p>
+
+<div class="summary">
+  <div class="summary-card done"><div class="num">6</div><div class="label">已完成步骤</div></div>
+  <div class="summary-card todo"><div class="num">2</div><div class="label">待完成步骤</div></div>
+  <div class="summary-card done"><div class="num">0</div><div class="label">Sanity 中的产品数</div></div>
+  <div class="summary-card done"><div class="num">&#10003;</div><div class="label">CORS 已验证</div></div>
+</div>
+
+<div class="done">
+  <strong>已完成：</strong>注册 Sanity 账号 &#8594; 获取 Project ID (aybncxp6) &#8594; 配置前端代码 &#8594; 安装启动 Studio &#8594; 配置 CORS &#8594; 关联 Cloudflare Pages 自动部署 &#8594; 网站已上线 (aile-website.pages.dev)
+</div>
+
+<!-- ==================== STEP 6 ==================== -->
+<h2>第六步：录入产品数据</h2>
+
+<div class="step">
+  <span class="step-num">待完成</span>
+  <p>在 Studio 后台录入你的产品数据。目前 Sanity 中有 0 条产品数据，网站显示的是 <code>products.js</code> 中的默认数据。</p>
+
+  <h3>6.1 打开 Studio</h3>
+  <p>方式一（本地）：确保终端在 <code>sanity</code> 目录下运行 <code>npm run dev</code>，浏览器打开 <code>http://localhost:3333</code></p>
+  <p>方式二（在线）：如果你已完成第七步部署了在线 Studio，直接访问你的 <code>xxx.sanity.studio</code> 地址</p>
+
+  <h3>6.2 创建新产品</h3>
+  <ol>
+    <li>左侧导航点击 <strong>Product</strong></li>
+    <li>点击右上角 <strong>Create new</strong> 按钮</li>
+    <li>进入产品编辑表单</li>
+  </ol>
+
+  <h3>6.3 填写产品信息</h3>
+  <p>表单包含以下字段，逐一填写：</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>字段</th>
+        <th>说明</th>
+        <th>示例</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="color:#fff">Product Name</td><td>产品全名</td><td style="color:#7a8599">Electric Mountain Bike</td></tr>
+      <tr><td style="color:#fff">Product URL Slug</td><td>URL 标识，点 "Generate" 自动生成</td><td style="color:#7a8599">electric-mountain-bike</td></tr>
+      <tr><td style="color:#fff">Model Number</td><td>型号</td><td style="color:#7a8599">Model M-01</td></tr>
+      <tr><td style="color:#fff">Category</td><td>选择 Electric Bike 或 Electric Scooter</td><td style="color:#7a8599">Electric Bike</td></tr>
+      <tr><td style="color:#fff">Sub-Category ID</td><td>内部筛选用 ID（见下方对照表）</td><td style="color:#7a8599">mountain</td></tr>
+      <tr><td style="color:#fff">Sub-Category Label</td><td>显示标签</td><td style="color:#7a8599">Mountain E-Bike</td></tr>
+      <tr><td style="color:#fff">Show on Homepage</td><td>勾选后显示在首页精选</td><td style="color:#7a8599">勾选</td></tr>
+      <tr><td style="color:#fff">Display Order</td><td>排序数字，越小越靠前</td><td style="color:#7a8599">1</td></tr>
+      <tr><td style="color:#fff">Badge</td><td>可选标签文字</td><td style="color:#7a8599">New</td></tr>
+      <tr><td style="color:#fff">Key Feature</td><td>核心卖点</td><td style="color:#7a8599">Full Suspension</td></tr>
+      <tr><td style="color:#fff">Motor</td><td>电机（卡片摘要）</td><td style="color:#7a8599">750W Brushless Hub</td></tr>
+      <tr><td style="color:#fff">Battery</td><td>电池（卡片摘要）</td><td style="color:#7a8599">48V 15Ah</td></tr>
+      <tr><td style="color:#fff">Range</td><td>续航（卡片摘要）</td><td style="color:#7a8599">80 km</td></tr>
+    </tbody>
+  </table>
+
+  <h3>6.4 上传产品图片</h3>
+  <p>在 <strong>Main Product Image</strong> 区域，点击上传按钮，选择本地图片文件上传。</p>
+  <p class="img-desc">建议图片尺寸：800x600 或更大，JPG/PNG/WebP 格式，单张不超过 5MB。</p>
+  <p>如果你更想用外部图片 URL 而非上传文件，在 <strong>Main Image URL (Alternative)</strong> 字段填写图片链接即可，该字段优先级高于上传的图片。</p>
+
+  <h3>6.5 添加技术参数</h3>
+  <p>在 <strong>Technical Specifications</strong> 区域：</p>
+  <ol>
+    <li>点击 <strong>Add item</strong></li>
+    <li><strong>Spec Name</strong> 填写参数名，如 <code>Motor</code></li>
+    <li><strong>Spec Value</strong> 填写参数值，如 <code>750W Brushless Hub Motor</code></li>
+    <li>继续点击 <strong>Add item</strong> 添加更多参数</li>
+  </ol>
+  <p class="img-desc">建议参数：Motor、Battery、Range、Max Speed、Frame、Weight、Tire Size、Brakes、Charging Time 等</p>
+
+  <h3>6.6 添加产品图库</h3>
+  <p>在 <strong>Product Gallery Images</strong> 区域，点击上传多张产品图片。</p>
+  <p>这些图片会显示在产品详情页的 Gallery 板块。建议上传 3-6 张不同角度的产品图。</p>
+
+  <h3>6.7 添加产品特性</h3>
+  <p>在 <strong>Key Features</strong> 区域：</p>
+  <ol>
+    <li>点击 <strong>Add item</strong></li>
+    <li><strong>Icon</strong>：从下拉菜单选择图标（Motor、Battery、Suspension、Brake、Frame、Display、Speed、Foldable、Range）</li>
+    <li><strong>Feature Title</strong>：如 <code>750W Hub Motor</code></li>
+    <li><strong>Feature Description</strong>：简要描述该特性</li>
+    <li>继续添加更多特性</li>
+  </ol>
+
+  <h3>6.8 保存并发布</h3>
+  <p>填写完成后，点击右上角 <strong>Publish</strong> 按钮发布产品。</p>
+  <div class="warn">
+    <strong>重要：</strong>未发布的产品是 Draft 状态，前端不会显示。一定要点 Publish。
+  </div>
+
+  <h3>6.9 Sub-Category ID 对照表</h3>
+  <p>录入产品时，Sub-Category ID 字段必须与以下值匹配，否则筛选功能无法正常工作：</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Sub-Category ID</th>
+        <th>Sub-Category Label</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="color:#7a8599" rowspan="6">ebike</td><td><code>mountain</code></td><td style="color:#7a8599">Mountain E-Bike</td></tr>
+      <tr><td><code>city</code></td><td style="color:#7a8599">City E-Bike</td></tr>
+      <tr><td><code>commuter</code></td><td style="color:#7a8599">Commuter E-Bike</td></tr>
+      <tr><td><code>folding</code></td><td style="color:#7a8599">Folding E-Bike</td></tr>
+      <tr><td><code>cargo</code></td><td style="color:#7a8599">Cargo E-Bike</td></tr>
+      <tr><td><code>fattire</code></td><td style="color:#7a8599">Fat Tire E-Bike</td></tr>
+      <tr><td style="color:#7a8599" rowspan="5">scooter</td><td><code>commuter</code></td><td style="color:#7a8599">Commuter Scooter</td></tr>
+      <tr><td><code>foldable</code></td><td style="color:#7a8599">Foldable Scooter</td></tr>
+      <tr><td><code>performance</code></td><td style="color:#7a8599">Performance Scooter</td></tr>
+      <tr><td><code>longrange</code></td><td style="color:#7a8599">Long Range Scooter</td></tr>
+      <tr><td><code>urban</code></td><td style="color:#7a8599">Urban Scooter</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <strong>录入完成后：</strong>无需重新部署网站。产品 Publish 后，访问网站刷新页面即可看到新产品数据。首页会显示标记为 "Show on Homepage" 的产品；产品列表页会显示所有已发布的产品。
+  </div>
+</div>
+
+<!-- ==================== STEP 7 ==================== -->
+<h2>第七步：部署 Sanity Studio（在线后台）</h2>
+
+<div class="step">
+  <span class="step-num">待完成</span>
+  <p>目前 Studio 只能在你本地电脑运行。部署到云端后，你可以在任何浏览器访问后台管理产品，无需本地运行。</p>
+
+  <h3>7.1 部署 Studio</h3>
+  <p>在终端中，确保仍在 <code>sanity</code> 目录下，运行：</p>
+  <pre><code>cd sanity
+npx sanity deploy</code></pre>
+
+  <h3>7.2 设置 Studio 域名</h3>
+  <p>系统会提示你输入 Studio 的域名前缀：</p>
+  <pre><code>Write your Studio hostname []
+aile-cms</code></pre>
+  <p>部署完成后你会获得一个在线 Studio 地址：</p>
+  <pre><code>https://aile-cms.sanity.studio</code></pre>
+
+  <h3>7.3 使用在线 Studio</h3>
+  <ul>
+    <li>在任何电脑/手机的浏览器打开该地址即可管理产品</li>
+    <li>支持多人协作（免费版支持 3 个用户）</li>
+    <li>修改后即时生效，无需重新部署网站</li>
+    <li>Studio 地址也可以分享给团队成员</li>
+  </ul>
+
+  <div class="note">
+    <strong>部署好处：</strong>部署后你不再需要每次本地运行 <code>npm run dev</code>。直接在浏览器打开 <code>https://aile-cms.sanity.studio</code> 就能管理所有产品数据。
+  </div>
+</div>
+
+<!-- ==================== 完成后的验证 ==================== -->
+<h2>完成后的验证</h2>
+
+<div class="step">
+  <span class="step-num">验证</span>
+  <p>录入产品并 Publish 后，访问 <code>https://aile-website.pages.dev</code> 验证：</p>
+  <ol>
+    <li>首页 "Featured Products" 板块应显示你在 Sanity 中标记为 "Show on Homepage" 的产品</li>
+    <li>产品列表页 (products.html) 应显示所有已发布的产品</li>
+    <li>点击产品卡片应跳转到产品详情页，显示你在 Sanity 中录入的参数和图片</li>
+  </ol>
+
+  <div class="warn">
+    <strong>如果网站仍然显示旧的默认数据：</strong>
+    <ol style="margin-top:8px">
+      <li>检查 Sanity 后台产品是否已 <strong>Publish</strong>（不能是 Draft）</li>
+      <li>打开浏览器开发者工具（F12）→ Console 面板查看是否有错误信息</li>
+      <li>打开 Network 面板查看 Sanity API 请求是否返回了数据</li>
+      <li>强制刷新页面（Ctrl + Shift + R）清除缓存</li>
+    </ol>
+  </div>
+</div>
+
+<div class="footer">
+  AiLE Electric Mobility — Sanity CMS 待完成步骤<br>
+  Project ID: aybncxp6 &nbsp;|&nbsp; 网站地址: https://aile-website.pages.dev
+</div>
+
+</div>
+
+</body>
+</html>
