@@ -207,9 +207,12 @@
       quickSpecs += '<div class="pd-hero__spec-label">Battery &amp; Range</div>';
       quickSpecs += '<div class="br-inline">';
       var batteryOptions = [
+        { capacity: '10Ah', range: '30 km' },
         { capacity: '15Ah', range: '45 km' },
         { capacity: '20Ah', range: '60 km' },
-        { capacity: '25Ah', range: '75 km' }
+        { capacity: '25Ah', range: '75 km' },
+        { capacity: '30Ah', range: '90 km' },
+        { capacity: '35Ah', range: '105 km' }
       ];
       batteryOptions.forEach(function(opt, idx) {
         var sep = idx > 0 ? '<span class="br-inline__sep"></span>' : '';
