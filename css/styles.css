@@ -495,17 +495,15 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .spec-table th{font-size:.78rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;width:40%}
 .spec-table td{font-size:.9rem;color:var(--c-gray-200)}
 
-/* ---------- Battery & Range Cards ---------- */
-.battery-range-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s-lg);max-width:840px;margin:0 auto}
-.br-card{position:relative;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-lg);padding:var(--s-xl);text-align:center;transition:all var(--t-fast)}
-.br-card:hover{border-color:var(--c-border-lt);transform:translateY(-2px)}
-.br-card--active{border-color:var(--c-accent);background:linear-gradient(180deg,var(--c-accent-dim) 0%,var(--c-surface) 100%)}
-.br-card__voltage{display:inline-block;font-size:.75rem;font-weight:600;color:var(--c-accent);background:var(--c-accent-dim);padding:.25rem .75rem;border-radius:var(--r-full);margin-bottom:1rem}
-.br-card__capacity{font-family:var(--ff-head);font-size:2.5rem;font-weight:800;color:var(--c-white);line-height:1}
-.br-card__divider{width:40px;height:2px;background:var(--c-border-lt);margin:1rem auto}
-.br-card__range-label{font-size:.75rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.25rem}
-.br-card__range{font-family:var(--ff-head);font-size:1.75rem;font-weight:700;color:var(--c-accent);line-height:1}
-.br-card__badge{position:absolute;top:-10px;left:50%;transform:translateX(-50%);font-size:.7rem;font-weight:700;color:var(--c-black);background:var(--c-accent);padding:.2rem .75rem;border-radius:var(--r-full);text-transform:uppercase;letter-spacing:.05em}
+/* ---------- Battery & Range Bar ---------- */
+.battery-range-bar{display:flex;gap:.75rem;flex-wrap:wrap}
+.br-item{display:flex;align-items:center;gap:.6rem;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-full);padding:.5rem 1.1rem;transition:all var(--t-fast)}
+.br-item:hover{border-color:var(--c-border-lt)}
+.br-item--active{border-color:var(--c-accent);background:var(--c-accent-dim)}
+.br-item__capacity{font-family:var(--ff-head);font-weight:700;font-size:.95rem;color:var(--c-white)}
+.br-item__arrow{color:var(--c-accent);font-size:1rem}
+.br-item__range{font-family:var(--ff-head);font-weight:600;font-size:.95rem;color:var(--c-accent)}
+.br-item__tag{display:inline-block;font-size:.65rem;font-weight:700;color:var(--c-black);background:var(--c-accent);padding:.1rem .5rem;border-radius:var(--r-full);text-transform:uppercase;letter-spacing:.04em;margin-left:.4rem;vertical-align:middle}
 
 /* ---------- About Page ---------- */
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-2xl);align-items:center}
@@ -562,7 +560,6 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
   .service-grid{grid-template-columns:repeat(2,1fr)}
   .pd-features{grid-template-columns:1fr 1fr}
   .features{grid-template-columns:repeat(2,1fr)}
-  .battery-range-grid{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:768px){
   :root{--s-3xl:4rem;--s-4xl:5rem;--cp:1rem}
@@ -586,7 +583,6 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
   .pd-hero{grid-template-columns:1fr}
   .pd-gallery{grid-template-columns:repeat(3,1fr)}
   .pd-features{grid-template-columns:1fr}
-  .battery-range-grid{grid-template-columns:1fr;max-width:320px}
   .footer__grid{grid-template-columns:1fr}
   .footer__bottom{flex-direction:column;text-align:center}
   .global-stats{grid-template-columns:1fr 1fr}
