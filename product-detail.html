@@ -218,7 +218,9 @@
       var featuresGrid = document.getElementById('featuresGrid');
       featuresGrid.innerHTML = product.features.map(function(f, i) {
         return '<div class="pd-feature reveal"' + (i > 2 ? ' data-delay="' + (i-2) + '"' : '') + '>' +
-          '<div class="pd-feature__icon">' + getFeatureIcon(f.icon) + '</div>' +
+          '<div class="pd-feature__img">' +
+            '<img src="' + f.image + '" alt="' + f.title + '" loading="lazy">' +
+          '</div>' +
           '<h4>' + f.title + '</h4>' +
           '<p>' + f.desc + '</p>' +
         '</div>';
