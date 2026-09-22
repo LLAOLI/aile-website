@@ -69,21 +69,6 @@
     </div>
   </section>
 
-  <!-- ============ SPECIFICATIONS ============ -->
-  <section class="section section--dark" id="pdSpecs">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Technical Details</p>
-        <h2 class="h-2">Key Specifications</h2>
-      </div>
-      <div style="background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-lg);overflow:hidden" class="reveal">
-        <table class="spec-table" id="specTable">
-          <!-- Rendered by JS -->
-        </table>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ GALLERY ============ -->
   <section class="section" id="pdGallery">
     <div class="container">
@@ -218,14 +203,11 @@
 
       // ---- Render Product Hero ----
       var heroEl = document.getElementById('pdHero');
+      var skipKeys = ['Battery', 'Range'];
       var quickSpecs = '<div class="pd-hero__specs">';
-      var specKeys = ['Motor', 'Battery', 'Range'];
-      if (product.category === 'scooter') specKeys.push('Max Speed');
-      specKeys.push(product.category === 'ebike' ? 'Frame' : 'Foldable');
-      specKeys.forEach(function(key) {
-        if (product.specs[key]) {
-          quickSpecs += '<div class="pd-hero__spec"><div class="pd-hero__spec-label">' + key + '</div><div class="pd-hero__spec-value">' + product.specs[key] + '</div></div>';
-        }
+      Object.keys(product.specs).forEach(function(key) {
+        if (skipKeys.indexOf(key) !== -1) return;
+        quickSpecs += '<div class="pd-hero__spec"><div class="pd-hero__spec-label">' + key + '</div><div class="pd-hero__spec-value">' + product.specs[key] + '</div></div>';
       });
       quickSpecs += '</div>';
 
@@ -261,16 +243,6 @@
           '</div>';
       });
       brGrid.innerHTML = brHtml;
-
-      // ---- Render Specifications Table (skip Battery & Range) ----
-      var skipKeys = ['Battery', 'Range'];
-      var specTable = document.getElementById('specTable');
-      var specHtml = '';
-      Object.keys(product.specs).forEach(function(key) {
-        if (skipKeys.indexOf(key) !== -1) return;
-        specHtml += '<tr><th>' + key + '</th><td>' + product.specs[key] + '</td></tr>';
-      });
-      specTable.innerHTML = specHtml;
 
       // ---- Render Gallery ----
       var galleryGrid = document.getElementById('galleryGrid');
