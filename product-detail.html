@@ -60,15 +60,6 @@
     </div>
   </section>
 
-  <!-- ============ BATTERY & RANGE ============ -->
-  <section class="section" id="pdBattery" style="padding-top:0;padding-bottom:0">
-    <div class="container">
-      <div class="battery-range-bar reveal" id="batteryRangeGrid">
-        <!-- Rendered by JS -->
-      </div>
-    </div>
-  </section>
-
   <!-- ============ GALLERY ============ -->
   <section class="section" id="pdGallery">
     <div class="container">
@@ -211,6 +202,21 @@
       });
       quickSpecs += '</div>';
 
+      // ---- Battery & Range Table ----
+      var batteryOptions = [
+        { capacity: '15Ah', range: '45 km' },
+        { capacity: '20Ah', range: '60 km' },
+        { capacity: '25Ah', range: '75 km' }
+      ];
+      var brHtml =
+        '<table class="br-table">' +
+          '<thead><tr><th>Battery Capacity</th><th>Range</th></tr></thead>' +
+          '<tbody>';
+      batteryOptions.forEach(function(opt) {
+        brHtml += '<tr><td>' + opt.capacity + '</td><td>' + opt.range + '</td></tr>';
+      });
+      brHtml += '</tbody></table>';
+
       heroEl.innerHTML =
         '<div class="pd-hero__img reveal">' +
           '<img src="' + product.img + '" alt="' + product.name + ' — ' + product.subLabel + ' by AiLE electric mobility manufacturer">' +
@@ -224,24 +230,8 @@
             '<a href="contact.html" class="btn btn--outline btn--lg">Contact Us</a>' +
           '</div>' +
           quickSpecs +
+          brHtml +
         '</div>';
-
-      // ---- Render Battery & Range Options ----
-      var batteryOptions = [
-        { capacity: '15Ah', range: '45 km' },
-        { capacity: '20Ah', range: '60 km' },
-        { capacity: '25Ah', range: '75 km' }
-      ];
-      var brGrid = document.getElementById('batteryRangeGrid');
-      var brHtml =
-        '<table class="br-table">' +
-          '<thead><tr><th>Battery Capacity</th><th>Range</th></tr></thead>' +
-          '<tbody>';
-      batteryOptions.forEach(function(opt) {
-        brHtml += '<tr><td>' + opt.capacity + '</td><td>' + opt.range + '</td></tr>';
-      });
-      brHtml += '</tbody></table>';
-      brGrid.innerHTML = brHtml;
 
       // ---- Render Gallery ----
       var galleryGrid = document.getElementById('galleryGrid');
