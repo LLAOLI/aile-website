@@ -203,7 +203,7 @@
       quickSpecs += '</div>';
 
       // ---- Battery & Range Table ----
-      var batteryOptions = [
+      var brRows = [
         { capacity: '10Ah', range: '30 km' },
         { capacity: '15Ah', range: '45 km' },
         { capacity: '20Ah', range: '60 km' },
@@ -211,14 +211,12 @@
         { capacity: '30Ah', range: '90 km' },
         { capacity: '35Ah', range: '105 km' }
       ];
-      var brHtml =
-        '<table class="br-table">' +
-          '<thead><tr><th>Battery Capacity</th><th>Range</th></tr></thead>' +
-          '<tbody>';
-      batteryOptions.forEach(function(opt) {
-        brHtml += '<tr><td>' + opt.capacity + '</td><td>' + opt.range + '</td></tr>';
+      var brHtml = '<div class="br-wrap">';
+      brHtml += '<div class="br-row br-row--head"><div class="br-cell">Battery Capacity</div><div class="br-cell">Range</div></div>';
+      brRows.forEach(function(r) {
+        brHtml += '<div class="br-row"><div class="br-cell">' + r.capacity + '</div><div class="br-cell br-cell--range">' + r.range + '</div></div>';
       });
-      brHtml += '</tbody></table>';
+      brHtml += '</div>';
 
       heroEl.innerHTML =
         '<div class="pd-hero__img reveal">' +

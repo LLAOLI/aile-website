@@ -498,13 +498,15 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .spec-table th{font-size:.78rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;width:40%}
 .spec-table td{font-size:.9rem;color:var(--c-gray-200)}
 
-/* ---------- Battery & Range Table ---------- */
-.br-table{width:100%;border-collapse:collapse;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-lg);overflow:hidden;margin-top:.4rem}
-.br-table th{font-size:.62rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;padding:.4rem .65rem;border-bottom:1px solid var(--c-border);text-align:left}
-.br-table th:first-child{width:calc(50% + .2rem)}
-.br-table td{font-size:.78rem;font-weight:600;color:var(--c-gray-200);padding:.4rem .65rem;border-bottom:1px solid var(--c-border);text-align:left}
-.br-table tr:last-child td{border-bottom:none}
-.br-table td:last-child{color:var(--c-accent)}
+/* ---------- Battery & Range Table (grid-based, aligned with spec cards) ---------- */
+.br-wrap{margin-top:.4rem;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-lg);overflow:hidden}
+.br-row{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;padding:0 .65rem}
+.br-row--head{padding-top:.4rem;padding-bottom:.4rem;border-bottom:1px solid var(--c-border)}
+.br-row--head .br-cell{font-size:.62rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;padding:0}
+.br-row:not(.br-row--head){padding-top:.4rem;padding-bottom:.4rem;border-bottom:1px solid var(--c-border)}
+.br-row:last-child{border-bottom:none}
+.br-cell{font-size:.78rem;font-weight:600;color:var(--c-gray-200);padding:0}
+.br-cell--range{color:var(--c-accent)}
 
 /* ---------- About Page ---------- */
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-2xl);align-items:center}
