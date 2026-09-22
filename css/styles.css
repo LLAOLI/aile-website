@@ -500,11 +500,11 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 
 /* ---------- Battery & Range Table ---------- */
 .br-table{width:100%;border-collapse:collapse;background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-lg);overflow:hidden;margin-top:.4rem}
-.br-table th{font-size:.62rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;text-align:left;padding:.45rem .75rem;border-bottom:1px solid var(--c-border)}
-.br-table th:last-child{text-align:right}
-.br-table td{font-size:.78rem;font-weight:600;color:var(--c-gray-200);padding:.35rem .75rem;border-bottom:1px solid var(--c-border)}
+.br-table th{font-size:.62rem;font-weight:600;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;text-align:left;padding:.4rem .65rem;border-bottom:1px solid var(--c-border)}
+.br-table th:first-child{width:calc(50% + .2rem)}
+.br-table td{font-size:.78rem;font-weight:600;color:var(--c-gray-200);padding:.4rem .65rem;border-bottom:1px solid var(--c-border)}
 .br-table tr:last-child td{border-bottom:none}
-.br-table td:last-child{color:var(--c-accent);text-align:right}
+.br-table td:last-child{color:var(--c-accent)}
 
 /* ---------- About Page ---------- */
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-2xl);align-items:center}
