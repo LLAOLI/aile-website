@@ -177,6 +177,11 @@ body>.skiptranslate{display:none!important}
 .goog-text-highlight{background:transparent!important;box-shadow:none!important;-webkit-box-shadow:none!important}
 .goog-tooltip{display:none!important}
 font{background:transparent!important;color:inherit!important}
+#google_translate_element{display:none!important}
+.goog-te-balloon-frame{display:none!important}
+#goog-gt-tt{display:none!important}
+.goog-te-spinner-pos{display:none!important}
+iframe.goog-te-menu-frame{display:none!important}
 .notranslate,.notranslate *{font-size:inherit!important;line-height:inherit!important}
 .hero__stats{flex-wrap:nowrap!important;gap:var(--s-md)!important}
 .hero__stat{white-space:nowrap;min-width:0;flex:1 1 0;text-align:center;overflow:hidden}
