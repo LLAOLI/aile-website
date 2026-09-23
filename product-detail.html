@@ -67,10 +67,7 @@
         <p class="eyebrow">Product Gallery</p>
         <h2 class="h-2">Engineered for Performance</h2>
       </div>
-      <div class="pd-gallery reveal" id="galleryGrid">
-        <!-- Rendered by JS -->
-      </div>
-      <div class="pd-features reveal" id="featuresGrid" style="margin-top:3rem">
+      <div class="pd-features reveal" id="featuresGrid">
         <!-- Rendered by JS -->
       </div>
     </div>
@@ -195,21 +192,17 @@
           '</div>' +
         '</div>';
 
-      // ---- Render Gallery ----
-      var galleryGrid = document.getElementById('galleryGrid');
-      galleryGrid.innerHTML = product.gallery.map(function(src, i) {
-        return '<div class="pd-gallery__item"><img src="' + src + '" alt="' + product.name + ' view ' + (i+1) + ' — AiLE" loading="lazy"></div>';
-      }).join('');
-
       // ---- Render Features ----
       var featuresGrid = document.getElementById('featuresGrid');
       featuresGrid.innerHTML = product.features.map(function(f, i) {
-        return '<div class="pd-feature reveal"' + (i > 2 ? ' data-delay="' + (i-2) + '"' : '') + '>' +
+        return '<div class="pd-feature reveal"' + (i > 1 ? ' data-delay="' + (i-1) + '"' : '') + '>' +
           '<div class="pd-feature__img">' +
             '<img src="' + f.image + '" alt="' + f.title + '" loading="lazy">' +
           '</div>' +
-          '<h4>' + f.title + '</h4>' +
-          '<p>' + f.desc + '</p>' +
+          '<div class="pd-feature__text">' +
+            '<h4>' + f.title + '</h4>' +
+            '<p>' + f.desc + '</p>' +
+          '</div>' +
         '</div>';
       }).join('');
 
