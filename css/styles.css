@@ -473,11 +473,11 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .pd-hero__cat{color:var(--c-accent);font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.35rem}
 .pd-hero__name{margin-bottom:.5rem;font-size:clamp(1.5rem,2.5vw,2.25rem)}
 .pd-hero__desc{color:var(--txt-2);line-height:1.5;margin-bottom:.75rem;font-size:.85rem}
-.pd-hero__cta{display:flex;gap:.75rem;flex-wrap:wrap;margin-bottom:.75rem}
-.pd-hero__cta .btn{padding:.55rem 1.4rem;font-size:.85rem}
+.pd-hero__cta{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.5rem}
+.pd-hero__cta .btn{padding:.3rem .7rem;font-size:.7rem}
 .pd-hero__bottom{margin-top:auto;width:100%}
 .pd-hero__specs{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;width:100%}
-.pd-hero__spec{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-sm);padding:.4rem .65rem}
+.pd-hero__spec{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-sm);padding:.3rem .65rem}
 .pd-hero__spec-label{font-size:.62rem;color:var(--txt-3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.1rem}
 .pd-hero__spec-value{font-size:.78rem;font-weight:600;line-height:1.2}
 
