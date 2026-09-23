@@ -139,90 +139,6 @@ let PRODUCTS = [
     ]
   },
   {
-    id: 'ebike-cargo',
-    name: 'Electric Cargo Bike',
-    model: 'Model CG-01',
-    category: 'ebike',
-    sub: 'cargo',
-    subLabel: 'Cargo E-Bike',
-    motor: '500W Mid-Drive',
-    battery: '48V 20Ah',
-    range: '90 km',
-    keyFeature: 'Heavy-Duty Payload',
-    badge: 'New',
-    img: imgURL('Premium electric cargo bike, long tail utility frame, black matte finish, cargo e-bike, professional studio product photography, dark gradient background'),
-    specs: {
-      Motor: '500W Mid-Drive Motor',
-      Battery: '48V 20Ah Lithium-Ion',
-      Range: '70-90 km (pedal assist)',
-      Frame: 'Reinforced Steel Alloy',
-      Tire: '20" x 4.0" Cargo',
-      Brake: 'Hydraulic Disc Brakes',
-      Suspension: 'Front Suspension Fork',
-      Gears: 'Enviolo Automatic',
-      'Max Load': '200 kg',
-      'Charging Time': '5-6 hours'
-    },
-    gallery: [
-      imgURL('Electric cargo bike front view, long tail utility frame, studio photography, dark background'),
-      imgURL('Electric cargo bike side profile, cargo platform, product shot, dark background'),
-      imgURL('Electric cargo bike cargo area detail, utility platform, close-up'),
-      imgURL('Electric cargo bike mid-drive motor detail, close-up product shot'),
-      imgURL('Electric cargo bike battery and controls, integrated design, close-up'),
-      imgURL('Electric cargo bike in urban delivery setting, cargo bike lifestyle')
-    ],
-    features: [
-      { icon: 'motor', image: imgURL('Electric cargo bike - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: 'Mid-Drive Motor', desc: '500W mid-drive motor delivers optimal torque for heavy cargo loads and hills.' },
-      { icon: 'battery', image: imgURL('Electric cargo bike - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 20Ah Battery', desc: 'High-capacity dual-battery option for extended delivery range.' },
-      { icon: 'frame', image: imgURL('Electric cargo bike - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Reinforced Frame', desc: 'Engineered for 200kg payload with integrated cargo platform options.' },
-      { icon: 'brake', image: imgURL('Electric cargo bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Brakes', desc: '4-piston hydraulic brakes designed for loaded stopping power.' },
-      { icon: 'display', image: imgURL('Electric cargo bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Cargo Display', desc: 'Full-color display with cargo weight estimator and route analytics.' },
-      { icon: 'suspension', image: imgURL('Electric cargo bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Heavy-Duty Fork', desc: 'Reinforced front suspension tuned for cargo weight distribution.' }
-    ]
-  },
-  {
-    id: 'ebike-commuter',
-    name: 'Electric Commuter Bike',
-    model: 'Model CM-01',
-    category: 'ebike',
-    sub: 'commuter',
-    subLabel: 'Commuter E-Bike',
-    motor: '400W Rear Hub',
-    battery: '36V 14Ah',
-    range: '70 km',
-    keyFeature: 'Integrated Lighting',
-    badge: null,
-    img: imgURL('Premium electric commuter bike, hybrid design, matte dark grey, urban commuter e-bike, integrated lights, professional studio product photography, dark gradient background'),
-    specs: {
-      Motor: '400W Rear Hub Motor',
-      Battery: '36V 14Ah Lithium-Ion',
-      Range: '60-70 km (pedal assist)',
-      Frame: 'Hybrid Aluminum Alloy',
-      Tire: '700C x 40mm Commuter',
-      Brake: 'Hydraulic Disc Brakes',
-      Suspension: 'Front Suspension Fork',
-      Gears: 'Shimano 8-Speed',
-      'Max Load': '140 kg',
-      'Charging Time': '4 hours'
-    },
-    gallery: [
-      imgURL('Electric commuter bike front view, hybrid design, studio photography, dark background'),
-      imgURL('Electric commuter bike side profile, urban hybrid e-bike, product shot'),
-      imgURL('Electric commuter bike integrated headlight detail, close-up product shot'),
-      imgURL('Electric commuter bike rear light and battery, integrated design, close-up'),
-      imgURL('Electric commuter bike handlebar controls and display, close-up'),
-      imgURL('Electric commuter bike on city bike lane, urban commuting lifestyle')
-    ],
-    features: [
-      { icon: 'motor', image: imgURL('Electric commuter bike - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '400W Hub Motor', desc: 'Balanced motor output optimized for daily commuting efficiency.' },
-      { icon: 'battery', image: imgURL('Electric commuter bike - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 14Ah Battery', desc: 'Extended range battery with integrated frame mounting.' },
-      { icon: 'frame', image: imgURL('Electric commuter bike - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Hybrid Frame', desc: 'Versatile frame geometry suited for both road and light trail use.' },
-      { icon: 'brake', image: imgURL('Electric commuter bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Brakes', desc: 'Hydraulic disc brakes for confident commuting in all weather.' },
-      { icon: 'display', image: imgURL('Electric commuter bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Smart Display', desc: 'Integrated display with USB charging and navigation support.' },
-      { icon: 'suspension', image: imgURL('Electric commuter bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Comfort Fork', desc: 'Adjustable suspension fork for varied road conditions.' }
-    ]
-  },
-  {
     id: 'ebike-fattire',
     name: 'Fat Tire E-Bike',
     model: 'Model FT-01',
@@ -309,48 +225,6 @@ let PRODUCTS = [
     ]
   },
   {
-    id: 'scooter-foldable',
-    name: 'Foldable Electric Scooter',
-    model: 'Model S-02',
-    category: 'scooter',
-    sub: 'foldable',
-    subLabel: 'Foldable Scooter',
-    motor: '300W Hub',
-    battery: '36V 7.5Ah',
-    range: '30 km',
-    keyFeature: 'Ultra-Compact Fold',
-    badge: 'New',
-    img: imgURL('Premium foldable electric scooter, compact folding design, matte grey, modern industrial design, professional studio product photography, dark gradient background'),
-    specs: {
-      Motor: '300W Brushless Hub',
-      Battery: '36V 7.5Ah Lithium-Ion',
-      Range: '25-30 km',
-      'Max Speed': '25 km/h',
-      'Wheel Size': '8.0" Solid Tire',
-      Brake: 'E-ABS Rear Brake',
-      Suspension: 'Rear Suspension',
-      'Max Load': '100 kg',
-      'Charging Time': '3 hours',
-      Foldable: 'Yes, ultra-compact'
-    },
-    gallery: [
-      imgURL('Foldable electric scooter front view, compact design, studio photography, dark background'),
-      imgURL('Foldable electric scooter side profile, folding scooter, product shot'),
-      imgURL('Foldable electric scooter fully folded, ultra compact, product detail'),
-      imgURL('Foldable electric scooter folding mechanism hinge, close-up detail'),
-      imgURL('Foldable electric scooter handlebar and throttle, controls close-up'),
-      imgURL('Foldable electric scooter carried by person, portability lifestyle')
-    ],
-    features: [
-      { icon: 'motor', image: imgURL('Foldable electric scooter - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '300W Motor', desc: 'Lightweight motor balanced for portability and daily range.' },
-      { icon: 'battery', image: imgURL('Foldable electric scooter - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 7.5Ah Battery', desc: 'Compact battery pack designed for minimal weight.' },
-      { icon: 'frame', image: imgURL('Foldable electric scooter - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Ultra-Compact Fold', desc: 'Folds to 40% of riding size for transit and office storage.' },
-      { icon: 'brake', image: imgURL('Foldable electric scooter - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'E-ABS Brake', desc: 'Electronic anti-lock braking system with regenerative charging.' },
-      { icon: 'display', image: imgURL('Foldable electric scooter - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Mini Display', desc: 'Compact LED dashboard with essential ride metrics.' },
-      { icon: 'suspension', image: imgURL('Foldable electric scooter - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Rear Shock', desc: 'Rear suspension absorbs urban road irregularities.' }
-    ]
-  },
-  {
     id: 'scooter-performance',
     name: 'Performance Electric Scooter',
     model: 'Model S-03',
@@ -391,90 +265,6 @@ let PRODUCTS = [
       { icon: 'display', image: imgURL('Performance electric scooter - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'TFT Display', desc: 'Full-color TFT display with ride modes, GPS, and diagnostics.' },
       { icon: 'display', image: imgURL('Performance electric scooter - LED bicycle headlight, bright beam, night riding safety, dark background'), title: 'LED Lighting', desc: 'Integrated front headlight, brake light, and ambient deck lighting.' }
     ]
-  },
-  {
-    id: 'scooter-longrange',
-    name: 'Long-Range Electric Scooter',
-    model: 'Model S-04',
-    category: 'scooter',
-    sub: 'longrange',
-    subLabel: 'Long-Range Scooter',
-    motor: '500W Hub',
-    battery: '48V 24Ah',
-    range: '90 km',
-    keyFeature: 'Extended Battery',
-    badge: null,
-    img: imgURL('Premium long-range electric scooter, large battery, sleek aerodynamic design, dark grey, professional studio product photography, dark gradient background'),
-    specs: {
-      Motor: '500W Brushless Hub',
-      Battery: '48V 24Ah Lithium-Ion',
-      Range: '80-90 km',
-      'Max Speed': '45 km/h',
-      'Wheel Size': '10.0" Self-Sealing',
-      Brake: 'Disc + E-ABS',
-      Suspension: 'Front + Rear Suspension',
-      'Max Load': '150 kg',
-      'Charging Time': '6-7 hours',
-      Foldable: 'Yes, reinforced fold'
-    },
-    gallery: [
-      imgURL('Long-range electric scooter front view, large battery design, studio photography, dark background'),
-      imgURL('Long-range electric scooter side profile, aerodynamic design, product shot'),
-      imgURL('Long-range electric scooter battery pack detail, large capacity, close-up'),
-      imgURL('Long-range electric scooter motor and wheel, hub motor close-up'),
-      imgURL('Long-range electric scooter display and controls, range dashboard, close-up'),
-      imgURL('Long-range electric scooter on long distance road, touring lifestyle, outdoor')
-    ],
-    features: [
-      { icon: 'motor', image: imgURL('Long range electric scooter - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '500W Motor', desc: 'Efficient motor tuned for extended range and consistent output.' },
-      { icon: 'battery', image: imgURL('Long range electric scooter - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 24Ah Battery', desc: 'Ultra-high capacity battery for 90km range on single charge.' },
-      { icon: 'suspension', image: imgURL('Long range electric scooter - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Dual Suspension', desc: 'Front and rear suspension for comfortable long-distance rides.' },
-      { icon: 'brake', image: imgURL('Long range electric scooter - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Disc + E-ABS', desc: 'Dual braking system optimized for higher-speed stability.' },
-      { icon: 'display', image: imgURL('Long range electric scooter - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'Range Display', desc: 'Smart display with range estimation and energy management.' },
-      { icon: 'display', image: imgURL('Long range electric scooter - LED bicycle headlight, bright beam, night riding safety, dark background'), title: 'LED Lighting', desc: 'High-visibility LED lighting system for safe long-distance riding.' }
-    ]
-  },
-  {
-    id: 'scooter-urban',
-    name: 'Urban Electric Scooter',
-    model: 'Model S-05',
-    category: 'scooter',
-    sub: 'urban',
-    subLabel: 'Urban Scooter',
-    motor: '400W Hub',
-    battery: '36V 12Ah',
-    range: '40 km',
-    keyFeature: 'City-Optimized',
-    badge: null,
-    img: imgURL('Premium urban electric scooter, modern city design, matte black, sleek urban mobility, professional studio product photography, dark gradient background'),
-    specs: {
-      Motor: '400W Brushless Hub',
-      Battery: '36V 12Ah Lithium-Ion',
-      Range: '35-40 km',
-      'Max Speed': '30 km/h',
-      'Wheel Size': '9.0" Pneumatic',
-      Brake: 'E-ABS + Drum Brake',
-      Suspension: 'Front Suspension',
-      'Max Load': '120 kg',
-      'Charging Time': '4 hours',
-      Foldable: 'Yes, quick fold'
-    },
-    gallery: [
-      imgURL('Urban electric scooter front view, modern city design, studio photography, dark background'),
-      imgURL('Urban electric scooter side profile, sleek urban scooter, product shot'),
-      imgURL('Urban electric scooter folded position, compact city fold, product detail'),
-      imgURL('Urban electric scooter deck and battery, integrated design, close-up'),
-      imgURL('Urban electric scooter handlebar and display, city controls, close-up'),
-      imgURL('Urban electric scooter on city street, urban mobility lifestyle, modern city background')
-    ],
-    features: [
-      { icon: 'motor', image: imgURL('Urban electric scooter - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '400W Motor', desc: 'Balanced motor output for efficient city navigation.' },
-      { icon: 'battery', image: imgURL('Urban electric scooter - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '36V 12Ah Battery', desc: 'Optimized capacity for daily urban commuting range.' },
-      { icon: 'suspension', image: imgURL('Urban electric scooter - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Front Suspension', desc: 'Front fork suspension absorbs city road imperfections.' },
-      { icon: 'brake', image: imgURL('Urban electric scooter - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'E-ABS + Drum', desc: 'Dual braking system for reliable urban stopping.' },
-      { icon: 'display', image: imgURL('Urban electric scooter - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LED Display', desc: 'Clear LED dashboard with speed, battery, and ride mode.' },
-      { icon: 'display', image: imgURL('Urban electric scooter - Folding electric bike mechanism, compact portable design, urban mobility'), title: 'Quick Fold', desc: 'Fast folding system for public transit and office storage.' }
-    ]
   }
 ];
 
@@ -483,17 +273,12 @@ const SUB_CATS = {
   ebike: [
     { id: 'mountain', label: 'Mountain E-Bike' },
     { id: 'city', label: 'City E-Bike' },
-    { id: 'commuter', label: 'Commuter E-Bike' },
     { id: 'folding', label: 'Folding E-Bike' },
-    { id: 'cargo', label: 'Cargo E-Bike' },
     { id: 'fattire', label: 'Fat Tire E-Bike' }
   ],
   scooter: [
     { id: 'commuter', label: 'Commuter Scooter' },
-    { id: 'foldable', label: 'Foldable Scooter' },
-    { id: 'performance', label: 'Performance Scooter' },
-    { id: 'longrange', label: 'Long-Range Scooter' },
-    { id: 'urban', label: 'Urban Scooter' }
+    { id: 'performance', label: 'Performance Scooter' }
   ]
 };
 

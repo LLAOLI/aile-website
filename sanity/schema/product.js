@@ -42,7 +42,7 @@ export const product = {
       name: 'sub',
       title: 'Sub-Category ID',
       type: 'string',
-      description: 'Internal ID for filtering. E-Bikes: mountain, city, commuter, folding, cargo, fattire. Scooters: commuter, foldable, performance, longrange, urban.',
+      description: 'Internal ID for filtering. E-Bikes: mountain, city, folding, fattire. Scooters: commuter, performance.',
       validation: (Rule) => Rule.required(),
     },
     {
