@@ -176,15 +176,7 @@ body{top:0!important}
 body>.skiptranslate{display:none!important}
 .goog-text-highlight{background:transparent!important;box-shadow:none!important;-webkit-box-shadow:none!important}
 .goog-tooltip{display:none!important}
-font{background:transparent!important;font-size:inherit!important;color:inherit!important}
-.goog-text-highlight *{font-size:inherit!important}
-.skiptranslate font{font-size:inherit!important}
-.eyebrow,.nav__link,.btn,.footer__link,.contact-method__label,.contact-method__value,.form-control,.form-group label,.spec-label,.spec-value,.pd-feature__title,.pd-feature__desc,.sec-head p,.cat-card__name,.cat-card__desc,.client-card__title,.client-card__desc,.client-card__challenge,.client-card__solution{font-size:inherit!important;line-height:inherit!important;letter-spacing:inherit!important;font-weight:inherit!important}
-.h-display,.hero__title{line-height:.95!important;font-weight:inherit!important;letter-spacing:inherit!important}
-.h-2{line-height:1!important;font-weight:inherit!important;letter-spacing:inherit!important}
-.h-3{line-height:1.05!important;font-weight:inherit!important;letter-spacing:inherit!important}
-.sec-head h2{line-height:inherit!important;font-weight:inherit!important;letter-spacing:inherit!important}
-.hero__sub{line-height:inherit!important;font-weight:inherit!important;letter-spacing:inherit!important}
+font{background:transparent!important;color:inherit!important}
 .hero__stats{flex-wrap:nowrap!important;gap:var(--s-lg)!important}
 .hero__stat{white-space:nowrap;min-width:0;flex:1 1 0;text-align:center}
 .hero__stat-num{white-space:nowrap;font-size:clamp(1.3rem,2.5vw,2rem)!important;line-height:1.1!important}
