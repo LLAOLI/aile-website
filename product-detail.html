@@ -76,19 +76,6 @@
     </div>
   </section>
 
-  <!-- ============ RELATED PRODUCTS ============ -->
-  <section class="section section--dark">
-    <div class="container">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Related Products</p>
-        <h2 class="h-2">Explore More</h2>
-      </div>
-      <div class="product-grid" id="relatedGrid">
-        <!-- Rendered by JS -->
-      </div>
-    </div>
-  </section>
-
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container">
@@ -225,19 +212,6 @@
           '<p>' + f.desc + '</p>' +
         '</div>';
       }).join('');
-
-      // ---- Render Related Products ----
-      var relatedGrid = document.getElementById('relatedGrid');
-      var related = PRODUCTS.filter(function(p) {
-        return p.category === product.category && p.id !== product.id;
-      }).slice(0, 3);
-      if (related.length < 3) {
-        var others = PRODUCTS.filter(function(p) {
-          return p.category !== product.category && p.id !== product.id;
-        }).slice(0, 3 - related.length);
-        related = related.concat(others);
-      }
-      relatedGrid.innerHTML = related.map(renderProductCard).join('');
 
       // ---- Re-init scroll reveal ----
       if ('IntersectionObserver' in window) {
