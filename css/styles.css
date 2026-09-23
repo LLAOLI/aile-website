@@ -405,7 +405,8 @@ h1,h2,h3,h4,h5,h6{font-family:var(--ff-head);font-weight:700;line-height:1.15;le
 .faq-item__a p{padding-bottom:var(--s-md);color:var(--txt-2);font-size:.9rem;line-height:1.7}
 
 /* ---------- Forms ---------- */
-.form-wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:var(--s-2xl);align-items:start}
+.form-wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:var(--s-2xl);align-items:stretch}
+.form-info{display:flex;flex-direction:column}
 .form-info h3{font-size:1.5rem;margin-bottom:var(--s-md)}
 .form-info p{color:var(--txt-2);line-height:1.7;margin-bottom:var(--s-lg)}
 .contact-method{display:flex;gap:var(--s-sm);margin-bottom:var(--s-md);align-items:flex-start}
@@ -414,7 +415,7 @@ h1,h2,h3,h4,h5,h6{font-family:var(--ff-head);font-weight:700;line-height:1.15;le
 .contact-method__label{font-size:.75rem;color:var(--txt-3);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.15rem}
 .contact-method__value{font-size:.9rem;color:var(--c-white)}
 
-.form-card{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-xl);padding:var(--s-xl)}
+.form-card{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--r-xl);padding:var(--s-xl);display:flex;flex-direction:column;justify-content:center}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-md)}
 .form-group{margin-bottom:var(--s-md)}
 .form-group label{display:block;font-size:.8rem;font-weight:600;color:var(--txt-2);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.05em}
