@@ -17,13 +17,30 @@ function getCurrentLang() {
 }
 
 function setLanguage(lang) {
+  var host = location.hostname;
+  var domainParts = host.split('.');
+  var domain = '';
+  if (domainParts.length > 2) {
+    domain = '.' + domainParts.slice(-2).join('.');
+  } else {
+    domain = '.' + host;
+  }
+
   if (lang === 'en') {
     document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-    document.cookie = 'googtrans=; path=/; domain=' + location.hostname + '; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+    document.cookie = 'googtrans=; path=/; domain=' + domain + '; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+    document.cookie = 'googtrans=; path=/; domain=.' + host + '; expires=Thu, 01 Jan 1970 00:00:00 UTC;';
   } else {
-    document.cookie = 'googtrans=/en/' + lang + '; path=/';
-    document.cookie = 'googtrans=/en/' + lang + '; path=/; domain=' + location.hostname;
+    var value = '/en/' + lang;
+    document.cookie = 'googtrans=' + value + '; path=/';
+    document.cookie = 'googtrans=' + value + '; path=/; domain=' + domain;
+    document.cookie = 'googtrans=' + value + '; path=/; domain=.' + host;
   }
+
+  if (typeof localStorage !== 'undefined') {
+    localStorage.setItem('aile_lang', lang);
+  }
+
   location.reload();
 }
 
@@ -36,8 +53,36 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 
+function restoreLanguage() {
+  var saved = null;
+  try { saved = localStorage.getItem('aile_lang'); } catch(e) {}
+  if (saved && saved !== 'en') {
+    var hasCookie = document.cookie.indexOf('googtrans=/en/' + saved) !== -1;
+    if (!hasCookie) {
+      var host = location.hostname;
+      var domainParts = host.split('.');
+      var domain = '';
+      if (domainParts.length > 2) {
+        domain = '.' + domainParts.slice(-2).join('.');
+      } else {
+        domain = '.' + host;
+      }
+      var value = '/en/' + saved;
+      document.cookie = 'googtrans=' + value + '; path=/';
+      document.cookie = 'googtrans=' + value + '; path=/; domain=' + domain;
+      document.cookie = 'googtrans=' + value + '; path=/; domain=.' + host;
+    }
+  }
+}
+
+restoreLanguage();
+
 function buildLangSwitcher() {
   var current = getCurrentLang();
+  var saved = null;
+  try { saved = localStorage.getItem('aile_lang'); } catch(e) {}
+  if (saved) current = saved;
+
   var currentLabel = 'English';
   for (var i = 0; i < LANGUAGES.length; i++) {
     if (LANGUAGES[i].code === current) {
