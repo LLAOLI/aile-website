@@ -73,6 +73,19 @@
     </div>
   </section>
 
+  <!-- ============ SIMILAR PRODUCTS ============ -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="sec-head reveal">
+        <p class="eyebrow">You May Also Like</p>
+        <h2 class="h-2">Similar Products</h2>
+      </div>
+      <div class="product-grid" id="relatedGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="container">
@@ -205,6 +218,19 @@
           '</div>' +
         '</div>';
       }).join('');
+
+      // ---- Render Similar Products ----
+      var relatedGrid = document.getElementById('relatedGrid');
+      var related = PRODUCTS.filter(function(p) {
+        return p.category === product.category && p.id !== product.id;
+      }).slice(0, 4);
+      if (related.length < 4) {
+        var others = PRODUCTS.filter(function(p) {
+          return p.category !== product.category && p.id !== product.id;
+        }).slice(0, 4 - related.length);
+        related = related.concat(others);
+      }
+      relatedGrid.innerHTML = related.map(renderProductCard).join('');
 
       // ---- Re-init scroll reveal ----
       if ('IntersectionObserver' in window) {
