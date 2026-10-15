@@ -24,7 +24,7 @@ let PRODUCTS = [
     range: '80 km',
     keyFeature: 'Full Suspension',
     badge: 'New',
-    img: imgURL('Premium electric mountain bike, full suspension frame, fat tires, matte black finish, modern industrial design, professional studio product photography, dark gradient background, high-end e-bike'),
+    img: 'images/ebike-mountain.jpg',
     specs: {
       Motor: '750W Brushless Hub Motor',
       Battery: '48V 15Ah Lithium-Ion',
