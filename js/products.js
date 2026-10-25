@@ -23,6 +23,7 @@ let PRODUCTS = [
     battery: '48V 15Ah',
     range: '80 km',
     keyFeature: 'Full Suspension',
+    desc: 'A professional-grade electric mountain bike designed and manufactured by AiLE. It features full suspension, a 700W brushless hub motor, multiple battery capacity options, and a range of up to 105 km.',
     badge: 'New',
     img: 'images/ebike-mountain.jpg',
     specs: {
