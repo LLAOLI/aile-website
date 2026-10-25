@@ -51,7 +51,7 @@ let PRODUCTS = [
       { icon: 'suspension', image: 'images/ebike-mountain-suspension.jpg', title: 'Hydraulic Suspension Fork', desc: 'Hydraulic suspension fork – finer cushioning and more controllable rebound.' },
       { icon: 'brake', image: 'images/ebike-mountain-brake.jpg', title: 'Dual Disc Brakes', desc: 'Front and rear dual disc brakes – responsive and stable emergency braking.' },
       { icon: 'gears', image: 'images/ebike-mountain-shifter.jpg', title: 'Shimano 7-Speed', desc: 'Shimano 7-speed gear system' },
-      { icon: 'display', image: imgURL('Electric mountain bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LCD Display', desc: 'Full-color LCD with speed, battery, distance, and assist level readout.' }
+      { icon: 'display', image: 'images/ebike-mountain-display.jpg', title: 'LCD Display', desc: 'Multi-function LCD display showing speed and battery level.' }
     ]
   },
   {
