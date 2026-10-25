@@ -30,7 +30,7 @@ let PRODUCTS = [
       Motor: '700W Brushless Hub Motor',
       Battery: '48V 15Ah Lithium-Ion',
       Range: '60-80 km (throttle) / 100 km (pedal assist)',
-      Frame: '6061 Aluminum Alloy',
+      Frame: 'High-carbon steel',
       Tire: '27.5" x 2.8" All-Terrain',
       Brake: 'Hydraulic Disc Brakes',
       Suspension: 'Front Fork + Rear Shock',
