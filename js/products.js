@@ -31,7 +31,7 @@ let PRODUCTS = [
       Battery: '48V 15Ah Lithium-Ion',
       Range: '60-80 km (throttle) / 100 km (pedal assist)',
       Frame: 'High-carbon steel',
-      Tire: '27.5" x 2.8" All-Terrain',
+      Tire: '20" × 4" mountain tires',
       Brake: 'Mechanical disc brakes',
       Suspension: 'Front Fork + Rear Shock',
       Gears: 'Shimano 7-Speed',
