@@ -48,7 +48,7 @@ let PRODUCTS = [
     features: [
       { icon: 'motor', image: 'images/ebike-mountain-motor.jpg', title: '700W Hub Motor', desc: 'High-torque brushless motor delivers smooth, consistent power for steep climbs and rough terrain.' },
       { icon: 'tire', image: 'images/ebike-mountain-tire.jpg', title: 'Puncture-Resistant Tires', desc: 'Three-layer puncture-resistant tires – slip-resistant, blowout-proof, and puncture-proof.' },
-      { icon: 'suspension', image: imgURL('Electric mountain bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Full Suspension', desc: 'Front fork and rear shock absorption system tuned for aggressive trail riding.' },
+      { icon: 'suspension', image: 'images/ebike-mountain-suspension.jpg', title: 'Hydraulic Suspension Fork', desc: 'Hydraulic suspension fork – finer cushioning and more controllable rebound.' },
       { icon: 'brake', image: imgURL('Electric mountain bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Disc Brakes', desc: '180mm hydraulic disc brakes provide reliable stopping power in all conditions.' },
       { icon: 'frame', image: imgURL('Electric mountain bike - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Alloy Frame', desc: 'Lightweight 6061 aluminum frame engineered for strength and maneuverability.' },
       { icon: 'display', image: imgURL('Electric mountain bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LCD Display', desc: 'Full-color LCD with speed, battery, distance, and assist level readout.' }
