@@ -68,7 +68,7 @@ let PRODUCTS = [
     range: '60 km',
     keyFeature: 'Step-Through Frame',
     badge: null,
-    img: imgURL('Premium electric city bike, step-through frame, elegant minimalist design, matte dark grey finish, urban e-bike, professional studio product photography, dark gradient background'),
+    img: 'images/ebike-city.jpg',
     specs: {
       Motor: '350W Rear Hub Motor',
       Battery: '36V 12Ah Lithium-Ion',
