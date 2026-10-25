@@ -19,14 +19,14 @@ let PRODUCTS = [
     category: 'ebike',
     sub: 'mountain',
     subLabel: 'Mountain E-Bike',
-    motor: '750W Brushless Hub',
+    motor: '700W Brushless Hub',
     battery: '48V 15Ah',
     range: '80 km',
     keyFeature: 'Full Suspension',
     badge: 'New',
     img: 'images/ebike-mountain.jpg',
     specs: {
-      Motor: '750W Brushless Hub Motor',
+      Motor: '700W Brushless Hub Motor',
       Battery: '48V 15Ah Lithium-Ion',
       Range: '60-80 km (throttle) / 100 km (pedal assist)',
       Frame: '6061 Aluminum Alloy',
@@ -46,7 +46,7 @@ let PRODUCTS = [
       imgURL('Electric mountain bike on mountain trail, outdoor lifestyle, scenic nature background')
     ],
     features: [
-      { icon: 'motor', image: 'images/ebike-mountain-motor.jpg', title: '750W Hub Motor', desc: 'High-torque brushless motor delivers smooth, consistent power for steep climbs and rough terrain.' },
+      { icon: 'motor', image: 'images/ebike-mountain-motor.jpg', title: '700W Hub Motor', desc: 'High-torque brushless motor delivers smooth, consistent power for steep climbs and rough terrain.' },
       { icon: 'battery', image: imgURL('Electric mountain bike - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 15Ah Battery', desc: 'Removable lithium-ion battery with smart BMS for extended range and long cycle life.' },
       { icon: 'suspension', image: imgURL('Electric mountain bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Full Suspension', desc: 'Front fork and rear shock absorption system tuned for aggressive trail riding.' },
       { icon: 'brake', image: imgURL('Electric mountain bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Disc Brakes', desc: '180mm hydraulic disc brakes provide reliable stopping power in all conditions.' },
