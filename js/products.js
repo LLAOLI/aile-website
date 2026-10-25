@@ -46,7 +46,7 @@ let PRODUCTS = [
       imgURL('Electric mountain bike on mountain trail, outdoor lifestyle, scenic nature background')
     ],
     features: [
-      { icon: 'motor', image: imgURL('Electric mountain bike - Electric bike hub motor close up, precision engineering, metallic texture, dark background'), title: '750W Hub Motor', desc: 'High-torque brushless motor delivers smooth, consistent power for steep climbs and rough terrain.' },
+      { icon: 'motor', image: 'images/ebike-mountain-motor.jpg', title: '750W Hub Motor', desc: 'High-torque brushless motor delivers smooth, consistent power for steep climbs and rough terrain.' },
       { icon: 'battery', image: imgURL('Electric mountain bike - Electric bike lithium battery pack, sleek design, green energy concept, studio lighting'), title: '48V 15Ah Battery', desc: 'Removable lithium-ion battery with smart BMS for extended range and long cycle life.' },
       { icon: 'suspension', image: imgURL('Electric mountain bike - Mountain bike suspension fork close up, shock absorber, off road cycling component'), title: 'Full Suspension', desc: 'Front fork and rear shock absorption system tuned for aggressive trail riding.' },
       { icon: 'brake', image: imgURL('Electric mountain bike - Hydraulic disc brake close up, bicycle brake caliper, metallic, dark background'), title: 'Hydraulic Disc Brakes', desc: '180mm hydraulic disc brakes provide reliable stopping power in all conditions.' },
