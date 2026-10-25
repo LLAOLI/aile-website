@@ -32,11 +32,11 @@ let PRODUCTS = [
       Range: '60-80 km (throttle) / 100 km (pedal assist)',
       Frame: 'High-carbon steel',
       Tire: '27.5" x 2.8" All-Terrain',
-      Brake: 'Hydraulic Disc Brakes',
+      Brake: 'Mechanical disc brakes',
       Suspension: 'Front Fork + Rear Shock',
-      Gears: 'Shimano 9-Speed',
+      Gears: 'Shimano 7-Speed',
       'Max Load': '150 kg',
-      'Charging Time': '4-5 hours'
+      'Charging Time': '7-8 hours'
     },
     gallery: [
       imgURL('Electric mountain bike front view, premium e-bike, matte black, studio photography, dark background'),
