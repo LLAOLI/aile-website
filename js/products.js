@@ -50,7 +50,7 @@ let PRODUCTS = [
       { icon: 'tire', image: 'images/ebike-mountain-tire.jpg', title: 'Puncture-Resistant Tires', desc: 'Three-layer puncture-resistant tires – slip-resistant, blowout-proof, and puncture-proof.' },
       { icon: 'suspension', image: 'images/ebike-mountain-suspension.jpg', title: 'Hydraulic Suspension Fork', desc: 'Hydraulic suspension fork – finer cushioning and more controllable rebound.' },
       { icon: 'brake', image: 'images/ebike-mountain-brake.jpg', title: 'Dual Disc Brakes', desc: 'Front and rear dual disc brakes – responsive and stable emergency braking.' },
-      { icon: 'frame', image: imgURL('Electric mountain bike - Aluminum bicycle frame detail, welding craftsmanship, industrial design'), title: 'Alloy Frame', desc: 'Lightweight 6061 aluminum frame engineered for strength and maneuverability.' },
+      { icon: 'gears', image: 'images/ebike-mountain-shifter.jpg', title: 'Shimano 7-Speed', desc: 'Shimano 7-speed gear system' },
       { icon: 'display', image: imgURL('Electric mountain bike - Electric bike LCD display screen close up, digital dashboard, modern technology'), title: 'LCD Display', desc: 'Full-color LCD with speed, battery, distance, and assist level readout.' }
     ]
   },
